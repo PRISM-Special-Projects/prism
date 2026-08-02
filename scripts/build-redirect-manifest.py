@@ -18,7 +18,9 @@ JOBS = ["/field-building-ops-coordinator","/researcher","/trustee-vacancies"]
 EXPLICIT = {**{p: "/#people" for p in PEOPLE},
             **{p: "/#opportunities" for p in JOBS},
             "/principles": "/#values",
-            "/the-field-of-artificial-consciousness": "/",  # retired: new map lives off-site
+            # Retired: the stakeholder map now lives off-site on the Digital Minds guide.
+            "/the-field-of-artificial-consciousness":
+                "https://digitalminds.guide/field-map",
             **{p: "/blog" for p in RETIRED_BLOG}}
 
 def is_kept(path):

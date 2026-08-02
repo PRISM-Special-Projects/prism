@@ -3,6 +3,8 @@
 // canonical-tagged meta-refresh page (SEO-correct, works without JS).
 // Runs after `next build` (see package.json). BASE_PATH is prefixed to the
 // destination for project-subpath deploys (e.g. /prism on the github.io preview).
+// A destination may also be an absolute off-site URL (e.g. a resource that now
+// lives on another site) — those take no BASE_PATH and canonicalise to themselves.
 import fs from "node:fs";
 import path from "node:path";
 
@@ -14,17 +16,19 @@ const OUT = path.join(ROOT, process.env.OUT_DIR ?? "out");
 const MANIFEST = path.join(ROOT, "content", "redirects.json");
 
 function stub(dest) {
-  const abs = `https://www.prism-global.com${dest}`;
+  const external = /^https?:\/\//.test(dest);
+  const target = external ? dest : `${BASE}${dest}`;
+  const canonical = external ? dest : `https://www.prism-global.com${dest}`;
   return `<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8">
 <title>Redirecting…</title>
-<link rel="canonical" href="${abs}">
-<meta http-equiv="refresh" content="0; url=${BASE}${dest}">
+<link rel="canonical" href="${canonical}">
+<meta http-equiv="refresh" content="0; url=${target}">
 <meta name="robots" content="noindex">
 </head><body>
-<p>This page has moved to <a href="${BASE}${dest}">${dest}</a>.</p>
-<script>location.replace(${JSON.stringify(BASE + dest)})</script>
+<p>This page has moved to <a href="${target}">${dest}</a>.</p>
+<script>location.replace(${JSON.stringify(target)})</script>
 </body></html>
 `;
 }
