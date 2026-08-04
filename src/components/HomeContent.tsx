@@ -158,7 +158,7 @@ const ADVISORS: { name: string; role: string; trustee?: boolean; href: string }[
   { name: "Susan Schneider", role: "Florida Atlantic University", href: "http://schneiderwebsite.com/" },
   { name: "Jeff Sebo", role: "New York University", href: "https://jeffsebo.net/" },
   { name: "Henry Shevlin", role: "University of Cambridge", href: "https://henryshevlin.com/" },
-  { name: "Derek Shiller", role: "Rethink Priorities", href: "https://derekshiller.com/" },
+  { name: "Derek Shiller", role: "Eleos AI Research", href: "https://derekshiller.com/" },
   { name: "Mark Solms", role: "University of Cape Town", href: "https://neuroscience.uct.ac.za/contacts/mark-solms" },
   { name: "Winnie Street", role: "Google", href: "https://www.linkedin.com/in/winniestreet/" },
 ];
