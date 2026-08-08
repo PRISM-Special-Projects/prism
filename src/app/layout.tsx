@@ -23,8 +23,11 @@ const headFont = Open_Sans({
 
 const SITE_TITLE =
   "PRISM — Partnership for Research Into Sentient Machines";
+// Kept close to the hero copy on purpose: when the meta tag and the page's most
+// prominent text agree, Google is likelier to use this instead of synthesising a
+// snippet from body content further down the page.
 const SITE_DESCRIPTION =
-  "A non-profit fostering responsible research into AI consciousness, moral status, and digital minds.";
+  "PRISM is a non-profit helping to build the field of digital minds, supporting research and education on AI consciousness, moral status, and AI minds.";
 // Social share card (Open Graph / Twitter). Absolute URL — crawlers don't resolve relative paths.
 // ?v=2: tagline removed 2026-07-24 — the version bump makes share-platform
 // scrapers treat it as a new image instead of serving their cached card.
