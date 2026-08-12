@@ -135,7 +135,7 @@ const TEAM = [
   { name: "Will Millership", role: "CEO", href: "https://www.linkedin.com/in/will-millership-98393b58/" },
   { name: "Mitch Alexander", role: "Special Projects", href: "https://www.linkedin.com/in/mitch-alexander-52524b159/" },
   { name: "Güney Ulaş Türker", role: "Field Building", href: "https://www.linkedin.com/in/guney-ulas-turker/" },
-  { name: "Ria Viswanathan", role: "Field Building and Research", href: "https://www.linkedin.com/in/ria-viswanathan/" },
+  { name: "Ria Viswanathan", role: "Field Building and Research", href: "https://riaviswanathan.com/" },
 ];
 
 // One combined advisors + trustees list, placed below Team as a grid; trustees
