@@ -163,9 +163,16 @@ const ADVISORS: { name: string; role: string; trustee?: boolean; href: string }[
   { name: "Winnie Street", role: "Google", href: "https://www.linkedin.com/in/winniestreet/" },
 ];
 
-// PRISM has no general careers page yet, so "Join the team" routes to the
-// contact form; point it at a careers page once one exists.
+// PRISM has no general careers index page yet — each open role gets its own
+// static page (see /head-of-operations) and a card here; "Join the team"
+// covers everyone else and routes to the contact form.
 const OPPORTUNITIES = [
+  {
+    title: "Head of Operations",
+    body: "We're hiring a Head of Operations to own HR, finance, systems, and compliance as PRISM scales. Cambridge, UK preferred; remote considered.",
+    cta: "View role",
+    href: "https://jobs.ashbyhq.com/PRISM/cd0ab91f-aff6-46d9-bb37-eb91833840ca",
+  },
   {
     title: "Join the team",
     body: "We're a small, growing non-profit scaling our research, operations, and communications. If you want to help build the field of digital minds research, we'd love to hear from you, whether or not there's a role currently advertised.",

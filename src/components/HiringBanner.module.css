@@ -1,0 +1,25 @@
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background: #111527;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.2s ease;
+}
+.link:hover {
+  background: #171c34;
+}
+.tag {
+  color: #9bb0d6;
+}
