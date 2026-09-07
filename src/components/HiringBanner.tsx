@@ -12,7 +12,7 @@ export function HiringBanner() {
       rel="noopener noreferrer"
     >
       <span className={styles.tag}>We&rsquo;re hiring</span>
-      <span>Head of Operations →</span>
+      <span>Head of Operations · Apply by Sept 30th →</span>
     </a>
   );
 }

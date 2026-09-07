@@ -169,7 +169,7 @@ const ADVISORS: { name: string; role: string; trustee?: boolean; href: string }[
 const OPPORTUNITIES = [
   {
     title: "Head of Operations",
-    body: "We're hiring a Head of Operations to own HR, finance, systems, and compliance as PRISM scales. Cambridge, UK preferred; remote considered.",
+    body: "We're hiring a Head of Operations to own HR, finance, systems, and compliance as PRISM scales. Cambridge, UK preferred; remote considered. To guarantee that your application receives full consideration, please apply by Wednesday, September 30th (11:59 PM UK time).",
     cta: "View role",
     href: "https://jobs.ashbyhq.com/PRISM/cd0ab91f-aff6-46d9-bb37-eb91833840ca",
   },

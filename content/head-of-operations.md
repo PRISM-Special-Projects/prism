@@ -5,6 +5,8 @@
 - **Reports to:** CEO
 - **Compensation:** Salary commensurate with experience, typical range of $100,000 - $160,000
 
+To guarantee that your application receives full consideration, please apply by Wednesday, September 30th (11:59 PM UK time).
+
 ## Overview
 
 PRISM is entering a period of growth, and we're looking for a Head of Operations to help us scale without losing what makes us effective. You'll take ownership of the operational backbone of the organisation (HR, finance, systems, and compliance) so that the people running our core programmes can focus on the work itself. This is a senior, high-trust role for someone who can build durable systems, exercise good judgement under uncertainty, and grow an operations function as the organisation expands.
