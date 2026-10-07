@@ -12,7 +12,7 @@ const LINKS = [
   { label: "Our work", href: "#our-work" },
   { label: "Partnerships", href: "#partnerships" },
   { label: "Who we are", href: "#people" },
-  { label: "Opportunities", href: "#opportunities" },
+  { label: "We're hiring", href: "#opportunities", button: true },
 ];
 
 export function NavMenu() {
@@ -36,7 +36,9 @@ export function NavMenu() {
         <a
           key={l.href}
           href={l.href}
-          className={styles.link}
+          className={
+            "button" in l ? `${styles.link} ${styles.button}` : styles.link
+          }
           onClick={handleNav(l.href)}
         >
           {l.label}

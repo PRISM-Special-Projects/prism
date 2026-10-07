@@ -5,7 +5,7 @@
 - **Reports to:** CEO
 - **Compensation:** Salary commensurate with experience, typical range of $100,000 - $160,000
 
-To guarantee that your application receives full consideration, please apply by Wednesday, September 30th (11:59 PM UK time).
+We are reviewing applications on a rolling basis, so please apply as soon as possible.
 
 ## Overview
 

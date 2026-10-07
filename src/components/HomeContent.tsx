@@ -164,14 +164,21 @@ const ADVISORS: { name: string; role: string; trustee?: boolean; href: string }[
 ];
 
 // PRISM has no general careers index page yet — each open role gets its own
-// static page (see /head-of-operations) and a card here; "Join the team"
-// covers everyone else and routes to the contact form.
+// static page (e.g. /head-of-programmes, which links on to Ashby) and a card
+// here; "Join the team" covers everyone else and routes to the contact form.
+// All hrefs are internal, so they render as in-tab Links (base path added).
 const OPPORTUNITIES = [
   {
-    title: "Head of Operations",
-    body: "We're hiring a Head of Operations to own HR, finance, systems, and compliance as PRISM scales. Cambridge, UK preferred; remote considered. To guarantee that your application receives full consideration, please apply by Wednesday, September 30th (11:59 PM UK time).",
+    title: "Head of Programmes",
+    body: "We're hiring a Head of Programmes to lead and grow our field-building portfolio, including the Digital Minds Fellowship, Strategy Workshop, Summer Gathering, and online course, run in partnership with Cambridge Digital Minds. Cambridge, UK preferred; remote considered. To guarantee that your application receives full consideration, please apply by Saturday, October 31st (11:59 PM UK time).",
     cta: "View role",
-    href: "https://jobs.ashbyhq.com/PRISM/cd0ab91f-aff6-46d9-bb37-eb91833840ca",
+    href: "/head-of-programmes",
+  },
+  {
+    title: "Head of Operations",
+    body: "We're hiring a Head of Operations to own HR, finance, systems, and compliance as PRISM scales. Cambridge, UK preferred; remote considered. We are reviewing applications on a rolling basis, so please apply as soon as possible.",
+    cta: "View role",
+    href: "/head-of-operations",
   },
   {
     title: "Join the team",
@@ -451,14 +458,12 @@ export function HomeContent() {
                 <div className={styles.ctaCard} key={o.title}>
                   <h3 className={styles.ctaCardTitle}>{o.title}</h3>
                   <p className={styles.ctaCardBody}>{o.body}</p>
-                  <a
+                  <Link
                     className={`${styles.btnWhite} ${styles.btnCta}`}
                     href={o.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
                   >
                     {o.cta} →
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>

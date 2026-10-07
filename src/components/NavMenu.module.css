@@ -22,6 +22,19 @@
 .link:focus-visible {
   opacity: 1;
 }
+/* Highlighted call-to-action link (currently "We're hiring") — a white pill. */
+.button {
+  opacity: 1;
+  color: #111527;
+  background: #ffffff;
+  padding: 0.4em 1em;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+.button:hover,
+.button:focus-visible {
+  background: #dfe6f3;
+}
 
 /* No hamburger, so on narrow screens the links wrap/centre under the logo
    (the hero nav stacks — see Hero.module.css). */
