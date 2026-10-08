@@ -18,7 +18,7 @@ export interface Entry {
   html: string;
   /** Optional episode/post artwork, front-matter `image:` — a /public path. */
   image: string | null;
-  /** Optional episode video, front-matter `youtube:` — a full watch URL. */
+  /** Optional episode video, front-matter `youtube:` — a full watch URL or youtu.be short link. */
   youtube: string | null;
   /** Optional Buzzsprout embed path (`<id>-<slug>`), front-matter `buzzsprout:`. */
   buzzsprout: string | null;
@@ -46,7 +46,8 @@ function parseFile(collection: string, file: string): Entry {
     redirectFrom: normalizeRedirects(data.redirect_from),
     image: typeof data.image === "string" && data.image.startsWith("/") ? data.image : null,
     youtube:
-      typeof data.youtube === "string" && data.youtube.startsWith("https://www.youtube.com/")
+      typeof data.youtube === "string" &&
+      (data.youtube.startsWith("https://www.youtube.com/") || data.youtube.startsWith("https://youtu.be/"))
         ? data.youtube
         : null,
     buzzsprout:

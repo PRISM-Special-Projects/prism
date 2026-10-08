@@ -316,6 +316,17 @@
   border-left: none;
   padding: clamp(0.7rem, 1.5vw, 1rem) clamp(1rem, 2vw, 1.4rem);
 }
+/* "Latest episode" marker on the first featured card — a small mono kicker in
+   the same slate-blue as "Featured episodes", sat above the title. */
+.latestTag {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.68rem;
+  line-height: 1.2;
+  color: var(--c-dark-kicker);
+  margin-bottom: 0.4rem;
+}
 .episodeTitle {
   font-family: var(--font-display);
   font-weight: 500;

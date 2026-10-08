@@ -71,8 +71,16 @@ const CARDS: {
 // Featured podcast episodes, shown inside the dark "Our work" bar. Each links to
 // the episode on YouTube (opens in a new tab); images are the guest's headshot in
 // /public (web-sized). `pos` is the object-position that keeps the face framed in
-// the square-ish tile.
+// the square-ish tile. The first entry is treated as the latest episode and gets
+// the "Latest episode" tag.
 const EPISODES = [
+  {
+    title: "Does Moral Concern Require AI to be Conscious?",
+    guest: "Soenke Ziesche",
+    img: "/guest-soenke.jpg",
+    pos: "58% 40%",
+    href: "/podcast/soenke-ziesche-does-moral-concern-require-ai-to-be-conscious",
+  },
   {
     title: "AI Rights and Legal Personhood",
     guest: "Heather Alexander",
@@ -87,13 +95,6 @@ const EPISODES = [
     img: "/guest-eric.jpg",
     pos: "50% 38%",
     href: "/podcast/eric-schwitzgebel-exotic-minds-and-the-design-policies-for-conscious-ai",
-  },
-  {
-    title: "Metacognition, Neuroscience, and Tests for AI Consciousness",
-    guest: "Megan Peters",
-    img: "/guest-megan.jpg",
-    pos: "50% 50%",
-    href: "/podcast/megan-peters-metacognition-neuroscience-and-tests-for-ai-consciousness",
   },
 ];
 
@@ -284,7 +285,7 @@ export function HomeContent() {
               <div className={styles.episodes}>
                 <span className={styles.kickerDark}>Featured episodes</span>
                 <div className={styles.episodeGrid}>
-                  {EPISODES.map((ep) => (
+                  {EPISODES.map((ep, i) => (
                     <Link
                       className={styles.episodeCard}
                       href={ep.href}
@@ -299,6 +300,9 @@ export function HomeContent() {
                         />
                       </div>
                       <div className={styles.episodeMeta}>
+                        {i === 0 && (
+                          <span className={styles.latestTag}>Latest episode</span>
+                        )}
                         <h4 className={styles.episodeTitle}>{ep.title}</h4>
                         <span className={styles.episodeGuest}>{ep.guest}</span>
                       </div>
