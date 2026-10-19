@@ -75,6 +75,13 @@ const CARDS: {
 // the "Latest episode" tag.
 const EPISODES = [
   {
+    title: "Could Granting AI Legal Personhood Make Us Safer?",
+    guest: "Peter Salib",
+    img: "/guest-peter.jpg",
+    pos: "50% 45%",
+    href: "/podcast/peter-salib-could-granting-ai-legal-personhood-make-us-safer",
+  },
+  {
     title: "Does Moral Concern Require AI to be Conscious?",
     guest: "Soenke Ziesche",
     img: "/guest-soenke.jpg",
@@ -88,13 +95,6 @@ const EPISODES = [
     img: "/guest-heather.jpg?v=2",
     pos: "50% 40%",
     href: "/podcast/heather-alexander-ai-rights-and-legal-personhood",
-  },
-  {
-    title: "Exotic Minds and the Design Policies for Conscious AI",
-    guest: "Eric Schwitzgebel",
-    img: "/guest-eric.jpg",
-    pos: "50% 38%",
-    href: "/podcast/eric-schwitzgebel-exotic-minds-and-the-design-policies-for-conscious-ai",
   },
 ];
 
