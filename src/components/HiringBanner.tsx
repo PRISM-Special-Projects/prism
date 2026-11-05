@@ -8,7 +8,7 @@ export function HiringBanner() {
   return (
     <a className={styles.link} href={HREF}>
       <span className={styles.tag}>We&rsquo;re hiring</span>
-      <span>Head of Operations / Head of Programmes · Apply now →</span>
+      <span>Head of Programmes · Apply now →</span>
     </a>
   );
 }

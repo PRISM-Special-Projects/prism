@@ -176,12 +176,6 @@ const OPPORTUNITIES = [
     href: "/head-of-programmes",
   },
   {
-    title: "Head of Operations",
-    body: "We're hiring a Head of Operations to own HR, finance, systems, and compliance as PRISM scales. Cambridge, UK preferred; remote considered. We are reviewing applications on a rolling basis, so please apply as soon as possible.",
-    cta: "View role",
-    href: "/head-of-operations",
-  },
-  {
     title: "Join the team",
     body: "We're a small, growing non-profit scaling our research, operations, and communications. If you want to help build the field of digital minds research, we'd love to hear from you, whether or not there's a role currently advertised.",
     cta: "Get in touch",
